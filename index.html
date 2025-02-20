@@ -257,6 +257,36 @@
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
 
+    /* Ad Styles */
+    .ad-container {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .ad-container.banner {
+      max-width: 300px;
+      margin: 20px auto;
+    }
+
+    .ad-container.native {
+      max-width: 100%;
+      margin: 20px 0;
+    }
+
+    .ad-container.social {
+      max-width: 100%;
+      margin: 20px 0;
+    }
+
+    .ad-container.popunder {
+      display: none; /* Popunder ads are handled via JavaScript */
+    }
+
+    .ad-container.direct-link {
+      max-width: 100%;
+      margin: 20px 0;
+    }
+
     @media (max-width: 768px) {
       .steps {
         flex-direction: column;
@@ -270,6 +300,21 @@
   </style>
 </head>
 <body>
+  <!-- Banner Ad (300x250) -->
+  <div class="ad-container banner">
+    <!-- Replace with your banner ad code -->
+    <script type="text/javascript">
+	atOptions = {
+		'key' : '6f18cff009202f7077d60bbf84412b91',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/6f18cff009202f7077d60bbf84412b91/invoke.js"></script>
+  </div>
+
   <div class="container">
     <h1>Online Image Compressor</h1>
     <div class="upload-section" id="upload-section">
@@ -301,18 +346,24 @@
     </div>
     <button id="download-btn" disabled>Download Compressed Image</button>
   </div>
-<div class=banner-ad">
-  <script type="text/javascript">
+
+  <!-- Native Banner Ad -->
+  <div class="ad-container native">
+    <script async="async" data-cfasync="false" src="//pl25918264.effectiveratecpm.com/d59c3987a4827d496b097ae60b1cfc67/invoke.js"></script>
+<div id="container-d59c3987a4827d496b097ae60b1cfc67"></div>
+  </div>
+  <div class="ad-container banner">
+      <script type="text/javascript">
 	atOptions = {
-		'key' : '6f18cff009202f7077d60bbf84412b91',
+		'key' : 'ba1d1558c7e14266299be7d6aa9f1f4a',
 		'format' : 'iframe',
-		'height' : 250,
-		'width' : 300,
+		'height' : 90,
+		'width' : 728,
 		'params' : {}
 	};
 </script>
-<script type="text/javascript" src="//www.highperformanceformat.com/6f18cff009202f7077d60bbf84412b91/invoke.js"></script>
-</div>
+<script type="text/javascript" src="//www.highperformanceformat.com/ba1d1558c7e14266299be7d6aa9f1f4a/invoke.js"></script>
+  </div>
   <!-- How to Use Section -->
   <div class="how-to-use" id="how-to-use">
     <h2>How to Use</h2>
@@ -336,6 +387,35 @@
     <div class="gif-container">
       <img src="https://via.placeholder.com/800x400" alt="Compression Process GIF">
     </div>
+  </div>
+
+  <!-- Social Ad -->
+  <div class="ad-container social">
+   <script type='text/javascript' src='//pl25918277.effectiveratecpm.com/5d/4d/9a/5d4d9a02c21a0918724d6b2c11d0ebff.js'></script>
+  </div>
+<div class="ad-container banner">
+    <script type="text/javascript">
+	atOptions = {
+		'key' : '7f47672b631cdcd38bfe0ac6e35b3b55',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/7f47672b631cdcd38bfe0ac6e35b3b55/invoke.js"></script>
+</div>
+  <!-- Direct Link Ad -->
+  <div class="ad-container direct-link">
+    <!-- Replace with your direct link ad code -->
+    <a href="https://www.effectiveratecpm.com/y2tu8czh?key=1592354d294061d0d4c2da53233808d4" target="_blank"> Donation 
+      <img src="https://via.placeholder.com/800x200" alt="Direct Link Ad">
+    </a>
+  </div>
+
+  <!-- Popunder Ad (Handled via JavaScript) -->
+  <div class="ad-container popunder">
+    <script type='text/javascript' src='//pl25918295.effectiveratecpm.com/74/e6/7a/74e67a73e36762c534eb1e05c75dfa99.js'></script>
   </div>
 
   <script>
@@ -470,6 +550,13 @@
       const i = Math.floor(Math.log(bytes) / Math.log(k));
       return `${parseFloat((bytes / Math.pow(k, i)).toFixed(decimals))} ${sizes[i]}`;
     }
+
+    // Popunder Ad Script (Example)
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        window.open('https://example.com', '_blank');
+      }, 3000); // Popunder ad opens after 3 seconds
+    });
   </script>
 </body>
 </html>
